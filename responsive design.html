@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ .demo{
+            width: 100%;
+            background-color: red;
+            height: 250px;
+        }
+        .line-parent{
+            width: 50px;
+            height: 4px;
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+        .line{
+            width: 40px;
+            height: 4px;
+            background-color: black;
+            margin: 6px;
+        }
+
+        ul{
+            list-style: none;
+            /* padding: 20px; */
+            background-color: lightblue;
+            display: none;
+        }
+        li{
+            display: inline-block;
+            font-size: 22px;
+            font-weight: 800;
+            padding: 15px;
+            text-align: right;
+        }
+        .li{
+            margin-left: 60%;
+        }
+
+
+
+        /* mobile view */
+/* @media (max-width:425px){} */
+
+/* tablet view */
+        @media (min-width:768px) {
+            .demo{
+                background-color: green;
+            }
+
+        }
+       
+    /* laptop view */
+        @media (min-width:1024px) {
+            .demo{
+                background-color: yellow;
+            }
+            .line-parent{
+                display: none;
+            }
+            ul{
+                display: block;
+            }
+        }   
+       
+       
+       
+       
+    </style>
+</head>
+<body>
+    <div class="line-parent">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <ul>
+        <li class="li">Home</li>
+        <li>Project</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>contact</li>
+    </ul>
+
+
+    <!-- <div class="demo"></div> -->
+    
+</body>
+</html>
